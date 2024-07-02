@@ -12,8 +12,8 @@
         <h1><%=name%></h1>
         <ul>
         <% menuItems.forEach(item=> { %>
-            <li> Name: <%=item.name %> - $<%=item.price %> <br />
-                        Rating: <%=item.rating %> <%=item.rating === 5 ? "🌟" : "/ 5" %> <br />
+            <li> Name: <%=item.name %> - $<%=item.price %> <%=item.rating === 5 ? "🌟" : " " %><br />
+                        Rating: <%=item.rating %> stars <br />
                             Description: <%=item.details %>
             </li>
             <% }) %>

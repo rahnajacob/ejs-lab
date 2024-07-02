@@ -12,8 +12,8 @@
     <h1>Full Menu</h1>
     <ul>
         <%menu.forEach((dish)=> { %>
-            <li> Name: <%=dish.name %> - $<%=dish.price %> <br />
-                        Rating: <%=dish.rating %> <%=dish.rating === 5 ? "🌟" : "/ 5" %><br />
+            <li> Name: <%=dish.name %> - $<%=dish.price %> <%=dish.rating === 5 ? "🌟" : " " %><br />
+                        Rating: <%=dish.rating %> stars<br />
                             Description: <%=dish.details %>
             </li>
             <% }) %>

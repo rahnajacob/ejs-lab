@@ -72,7 +72,7 @@ app.get("/menu/:category", (req, res) => {
     let filteredMenuItems = (RESTAURANT.menu.filter(({category}) => category === req.params.category))
     res.render("category.ejs", {
         menuItems: filteredMenuItems,
-        name: RESTAURANT.name
+        name: category
     })
 })
 
